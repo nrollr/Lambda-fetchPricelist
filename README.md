@@ -20,4 +20,4 @@ The function executes a script -**Python 3.6 runtime**- and downloads a copy of 
 	* replace `{region}`, `{account-id}` and `{funtion-name}` in the CloudWatch Log Group ARN with the appropriate values for your environment
 
 ### Contributor
-[https://twitter.com/aboutdev](@AboutDev)
+[@AboutDev](https://twitter.com/aboutdev)
