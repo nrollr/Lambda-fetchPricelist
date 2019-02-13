@@ -13,8 +13,11 @@ The function executes a script -**Python 3.6 runtime**- and downloads a copy of 
 * The billing metric data is stored in the **US East (N. Virginia)** Region, meaning if you create the SNS subscription as outined in [the documentation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-notification.html), make sure the SNS console has **US East (N. Virginia)** as selected region.
 * The Lambda function makes use of a Lambda layer, which includes the [Pendulum Python library](https://pendulum.eustace.io)
 	* If you are not familiar with Lambda layers, check our [these instructions](https://github.com/nrollr/Lambda-Layers)
-	* Using the Pendulum library is optional, you can use the Python **datetime** module instead. An example of a Python script using [datetime](https://docs.python.org/3/library/datetime.html#module-datetime) is included in the `datetime`[-directory](https://github.com/nrollr/Lambda-fetchPricelist/datetime) within this repository.
+	* Using the Pendulum library is optional, you can use the Python **datetime** module instead. An example of a Python script using [datetime](https://docs.python.org/3/library/datetime.html#module-datetime) is included in the `datetime`-[directory](https://github.com/nrollr/Lambda-fetchPricelist/tree/master/datetime) within this repository.
 
 * Make sure to adapt the IAM Policy file, and replace the placeholder values:
 	* `{your-s3-bucket-name}` = the S3 bucket the file will be written to,
 	* replace `{region}`, `{account-id}` and `{funtion-name}` in the CloudWatch Log Group ARN with the appropriate values for your environment
+
+### Contributor
+[https://twitter.com/aboutdev](@AboutDev)
