@@ -11,7 +11,7 @@ The function executes a script -**Python 3.6 runtime**- and downloads a copy of 
 ### Comments
 
 * The billing metric data is stored in the **US East (N. Virginia)** Region, meaning if you create the SNS subscription as outined in [the documentation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-notification.html), make sure the SNS console has **US East (N. Virginia)** as selected region.
-* The Lambda function makes use of a Lambda layer, which includes the [Pendulum Python library](https://pendulum.eustace.io)
+* The Lambda function makes use of a Lambda layer, which includes the [Pendulum Python library](https://pendulum.eustace.io) and the [Certifi Library](https://certifi.io/en/latest/)
 	* If you are not familiar with Lambda layers, check our [these instructions](https://github.com/nrollr/Lambda-Layers)
 	* Using the Pendulum library is optional, you can use the Python **datetime** module instead. An example of a Python script using [datetime](https://docs.python.org/3/library/datetime.html#module-datetime) is included in the `datetime`-[directory](https://github.com/nrollr/Lambda-fetchPricelist/tree/master/datetime) within this repository.
 
